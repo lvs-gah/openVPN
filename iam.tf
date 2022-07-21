@@ -10,7 +10,7 @@ resource "aws_iam_role_policy_attachment" "open-vpn" {
 
 
 resource "aws_iam_role" "main" {
-  name = "wordpress"
+  name = "open-vpn"
   assume_role_policy = data.aws_iam_policy_document.ec2_assume_role.json
 }
 
