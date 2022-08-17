@@ -1,5 +1,5 @@
 resource "aws_default_subnet" "default_subnet" {
-  availability_zone = "eu-west-2a"
+  availability_zone = var.availability_zone
   tags = {
       Name = "Default Subnet"
   }

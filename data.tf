@@ -3,8 +3,8 @@ data "aws_vpc" "default_vpc" {
 }
 
 data "aws_subnet" "default_subnet" {
-    availability_zone = "eu-west-2a"
-}
+  availability_zone = var.availability_zone
+  }
 
 data "aws_ami" "linux2" {
   most_recent = true
