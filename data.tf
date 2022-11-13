@@ -17,7 +17,7 @@ data "aws_ami" "linux2" {
 
   filter {
     name   = "architecture"
-    values = ["arm64"]
+    values = ["x86_64"]
   }
 
 

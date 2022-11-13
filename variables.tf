@@ -1,16 +1,23 @@
 variable "region" {
     type = string
-    default = "ap-south-1"
+    default = "eu-west-2"
 }
 
 variable "availability_zone" {
     type = string
-    default = "ap-south-1a"
+    default = "eu-west-2c"
 }
 
+# Ubuntu
+# variable "instance_type" {
+#     type = string
+#     default = "t4g.small"
+# }
+
+# Amazon Linux 2
 variable "instance_type" {
     type = string
-    default = "t4g.small"
+    default = "t2.micro"
 }
 
 variable "root_volume_size" {
