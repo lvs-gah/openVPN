@@ -1,11 +1,11 @@
 variable "region" {
     type = string
-    default = "eu-west-2"
+    default = "ap-south-1"
 }
 
 variable "availability_zone" {
     type = string
-    default = "eu-west-2c"
+    default = "ap-south-1a"
 }
 
 # Ubuntu

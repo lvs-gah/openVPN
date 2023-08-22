@@ -4,7 +4,7 @@ data "aws_vpc" "default_vpc" {
 
 data "aws_subnet" "default_subnet" {
   availability_zone = var.availability_zone
-  }
+}
 
 data "aws_ami" "linux2" {
   most_recent = true
@@ -33,7 +33,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd*"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-*"] 
   }
 
   filter {
@@ -43,7 +43,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
   name   = "architecture"
-  values = ["arm64"]
+  values = ["x86_64"]
   }
 
   owners = ["099720109477"]
